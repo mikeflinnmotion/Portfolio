@@ -34,18 +34,14 @@
       <video
         src="assets/video/DemoReel_2026_v01.mp4"
         poster="assets/images/reel-poster.jpg"
-        muted
         playsinline
         preload="metadata"
+        id="reel-video"
       ></video>
-      <div class="reel-overlay">
+      <div class="reel-poster" id="reel-poster">
         <div class="reel-play">
           <div class="reel-circle"><div class="reel-tri"></div></div>
           <span class="reel-label">Demo Reel 2026</span>
-        </div>
-        <div class="reel-meta">
-          <span class="reel-meta-title">Demo Reel</span>
-          <span class="reel-meta-year">2026</span>
         </div>
       </div>
     </div>
@@ -60,7 +56,7 @@
         </div>
         <div class="cards">
           <a href="projects/assistivetouch.html" class="card wide">
-            <img src="assets/images/thumb-assistivetouch.jpg" alt="AssistiveTouch on iPhone & iPad" class="card-thumb" />
+            <img src="assets/images/assistivetouch.jpg" alt="AssistiveTouch on iPhone & iPad" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">AssistiveTouch on iPhone &amp; iPad</div>
               <div class="card-role">Motion Graphics Artist</div>
@@ -68,7 +64,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/edit-unsend-imessage.html" class="card">
-            <img src="assets/images/thumb-edit-unsend-imessage.jpg" alt="How to Edit or Unsend an iMessage" class="card-thumb" />
+            <img src="assets/images/edit-unsend-imessage.jpg" alt="How to Edit or Unsend an iMessage" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">How to Edit or Unsend an iMessage</div>
               <div class="card-role">Motion Graphics Artist</div>
@@ -76,7 +72,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/icloud-storage-hook.html" class="card">
-            <img src="assets/images/thumb-icloud-storage-hook.jpg" alt="Upgrade and Manage Your iCloud Storage" class="card-thumb" />
+            <img src="assets/images/icloud-storage-hook.jpg" alt="Upgrade and Manage Your iCloud Storage" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Upgrade and Manage Your iCloud Storage</div>
               <div class="card-role">Motion Graphics Artist</div>
@@ -84,7 +80,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/android-to-iphone-hook.html" class="card">
-            <img src="assets/images/thumb-android-to-iphone-hook.jpg" alt="Move from Android to iPhone" class="card-thumb" />
+            <img src="assets/images/android-to-iphone-hook.jpg" alt="Move from Android to iPhone" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Move from Android to iPhone</div>
               <div class="card-role">Motion Graphics Artist</div>
@@ -92,7 +88,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/hide-apps.html" class="card">
-            <img src="assets/images/thumb-hide-apps.jpg" alt="How to Hide Apps on Your iPhone or iPad" class="card-thumb" />
+            <img src="assets/images/hide-apps.jpg" alt="How to Hide Apps on Your iPhone or iPad" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">How to Hide Apps on Your iPhone or iPad</div>
               <div class="card-role">Motion Graphics Artist</div>
@@ -110,7 +106,7 @@
         </div>
         <div class="cards">
           <a href="projects/baltimore-queen.html" class="card">
-            <img src="assets/images/thumb-baltimore-queen.jpg" alt="Baltimore Queen — Lyric Video" class="card-thumb" />
+            <img src="assets/images/baltimore-queen.jpg" alt="Baltimore Queen — Lyric Video" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Baltimore Queen — Lyric Video</div>
               <div class="card-role">Motion Designer</div>
@@ -118,7 +114,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/orioles-chain.html" class="card wide">
-            <img src="assets/images/thumb-orioles-chain.jpg" alt="Orioles Chain" class="card-thumb" />
+            <img src="assets/images/orioles-chain.jpg" alt="Orioles Chain" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Orioles Chain</div>
               <div class="card-role">Personal Project</div>
@@ -126,7 +122,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/mo-gaba.html" class="card">
-            <img src="assets/images/thumb-mo-gaba.jpg" alt="Mo Gaba — Animated Baseball Card" class="card-thumb" />
+            <img src="assets/images/mo-gaba.jpg" alt="Mo Gaba — Animated Baseball Card" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Mo Gaba — Animated Baseball Card</div>
               <div class="card-role">Personal Project</div>
@@ -134,7 +130,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/vintage-plane.html" class="card">
-            <img src="assets/images/thumb-vintage-plane.jpg" alt="Vintage Plane" class="card-thumb" />
+            <img src="assets/images/vintage-plane.jpg" alt="Vintage Plane" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Vintage Plane</div>
               <div class="card-role">Personal Project</div>
@@ -142,7 +138,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/shader-study.html" class="card">
-            <img src="assets/images/thumb-shader-study.jpg" alt="Shader Study" class="card-thumb" />
+            <img src="assets/images/shader-study.jpg" alt="Shader Study" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Shader Study</div>
               <div class="card-role">Personal Project</div>
@@ -150,7 +146,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/dynamics-study.html" class="card">
-            <img src="assets/images/thumb-dynamics-study.jpg" alt="Dynamics Study" class="card-thumb" />
+            <img src="assets/images/dynamics-study.jpg" alt="Dynamics Study" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Dynamics Study</div>
               <div class="card-role">Personal Project</div>
@@ -168,7 +164,7 @@
         </div>
         <div class="cards">
           <a href="projects/bloomhouse-audio.html" class="card">
-            <img src="assets/images/thumb-bloomhouse-audio.jpg" alt="Bloomhouse Audio" class="card-thumb" />
+            <img src="assets/images/bloomhouse-audio.jpg" alt="Bloomhouse Audio" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Bloomhouse Audio — Logo Animation</div>
               <div class="card-role">Motion Designer</div>
@@ -176,7 +172,7 @@
             <span class="card-arrow">↗</span>
           </a>
           <a href="projects/tails-and-trails.html" class="card">
-            <img src="assets/images/thumb-tails-and-trails.jpg" alt="Tails & Trails" class="card-thumb" />
+            <img src="assets/images/tails-and-trails.jpg" alt="Tails & Trails" class="card-thumb" />
             <div class="card-info">
               <div class="card-title">Tails &amp; Trails — Logo Animation</div>
               <div class="card-role">Motion Designer</div>

@@ -170,18 +170,20 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
-.reel-overlay {
+.reel-poster {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.45);
   cursor: pointer;
   transition: background 200ms ease;
 }
-.reel-overlay:hover { background: rgba(0,0,0,0.2); }
+.reel-poster:hover { background: rgba(0,0,0,0.3); }
+.reel-poster.hidden { display: none; }
 .reel-play {
   display: flex;
   flex-direction: column;
@@ -198,7 +200,7 @@ footer {
   justify-content: center;
   transition: border-color 200ms ease;
 }
-.reel-overlay:hover .reel-circle { border-color: var(--acc); }
+.reel-poster:hover .reel-circle { border-color: var(--acc); }
 .reel-tri {
   width: 0; height: 0;
   border-top: 9px solid transparent;
@@ -212,26 +214,6 @@ footer {
   text-transform: uppercase;
   color: var(--acc-dim);
   font-weight: 300;
-}
-.reel-meta {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  padding: 28px 40px;
-  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.reel-meta-title {
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #888;
-  font-weight: 300;
-}
-.reel-meta-year {
-  font-size: 0.68rem;
-  color: var(--dim);
 }
 
 /* ── HOME — Sections ────────────────────────────────────────── */

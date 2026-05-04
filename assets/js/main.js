@@ -18,24 +18,14 @@ if (toggle && overlay) {
   });
 }
 
-// Reel: click overlay to play/pause
-const reelOverlay = document.querySelector('.reel-overlay');
-const reelVideo = document.querySelector('.reel video');
+// Reel: click poster to play, then hand off to native controls
+const reelPoster = document.getElementById('reel-poster');
+const reelVideo = document.getElementById('reel-video');
 
-if (reelOverlay && reelVideo) {
-  reelOverlay.addEventListener('click', () => {
-    if (reelVideo.paused) {
-      reelVideo.play();
-      reelOverlay.style.opacity = '0';
-      reelOverlay.style.pointerEvents = 'none';
-    }
-  });
-  reelVideo.addEventListener('pause', () => {
-    reelOverlay.style.opacity = '1';
-    reelOverlay.style.pointerEvents = 'auto';
-  });
-  reelVideo.addEventListener('ended', () => {
-    reelOverlay.style.opacity = '1';
-    reelOverlay.style.pointerEvents = 'auto';
+if (reelPoster && reelVideo) {
+  reelPoster.addEventListener('click', () => {
+    reelVideo.controls = true;
+    reelPoster.classList.add('hidden');
+    reelVideo.play();
   });
 }
